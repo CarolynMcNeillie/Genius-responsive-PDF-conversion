@@ -3,8 +3,19 @@
 //Delete unwanted partial.css
 //Import the partial
 //Save style.scss
+@import "partials/setup";
+@import "partials/variables";
 @import "partials/header";
 @import "partials/footer";
 body {
-    background: red;
+    font-family: 'Raleway', sans-serif;
+}
+
+.wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+li {
+    display: inline-block;
 }

@@ -1,3 +1,16 @@
-header {
-    width: 90%;
+.nav-primary {
+    background: $darkblack;
+}
+
+.hero {
+    background: url(../images/hero.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: $green;
+}
+
+button {
+    background: $green;
+    border: 0;
 }
