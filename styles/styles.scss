@@ -1,0 +1,10 @@
+//Make partial
+//Save partial
+//Delete unwanted partial.css
+//Import the partial
+//Save style.scss
+@import "partials/header";
+@import "partials/footer";
+body {
+    background: red;
+}
