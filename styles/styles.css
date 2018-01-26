@@ -213,6 +213,11 @@ div.nav-primary-logo {
   text-align: right; }
   .nav-primary-login li {
     padding-left: 40px; }
+    .nav-primary-login li .decorated::before {
+      content: "|";
+      position: relative;
+      left: -20px;
+      color: #fff; }
 
 .nav-secondary {
   background-color: #ffffff;
