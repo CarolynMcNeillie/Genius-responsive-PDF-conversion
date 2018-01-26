@@ -1,0 +1,42 @@
+.courses {
+    ul {
+        text-align: center;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 300;
+    }
+    li {
+        margin: 0 15px;
+    }
+    a {
+        color: $black;
+        text-decoration: none;
+        transition: all 0.4s;
+    }
+    a:hover {
+        color: $green;
+    }
+}
+
+.courses-cards {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: calc((100% - 90px) / 4);
+    border: 1px solid $bordergray;
+    img {
+        width: 100%;
+    }
+    &:nth-child(4n) {
+        margin-right: 0;
+    }
+}
+
+.social {
+    border-top: 1px solid $bordergray;
+}

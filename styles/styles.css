@@ -191,6 +191,15 @@ input::-moz-focus-inner {
   .nav-primary .svg-inline--fa {
     margin-right: 15px; }
 
+.nav-primary-logo img {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+  .nav-primary-logo img:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); }
+
 .nav-primary-contact {
   padding: 0;
   -ms-flex-preferred-size: 400px;
@@ -221,11 +230,13 @@ div.nav-primary-logo {
 
 .nav-secondary {
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 0px 10px black;
-  box-shadow: 0px 0px 10px black;
-  height: 70px; }
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 1, 0.35);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 1, 0.35);
+  min-height: 70px;
+  position: relative;
+  z-index: 10; }
   .nav-secondary ul {
-    height: 70px;
+    min-height: 70px;
     margin: 0 auto;
     width: 80%;
     display: -webkit-box;
@@ -250,11 +261,13 @@ div.nav-primary-logo {
     color: #86bc42; }
 
 .hero {
-  background: url(../images/hero.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.8))), url(../images/hero.jpg);
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.8)), url(../images/hero.jpg);
+  background: -o-linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.8)), url(../images/hero.jpg);
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.8)), url(../images/hero.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  background-color: #86bc42;
   height: calc(100vh - 150px);
   text-align: center;
   display: -webkit-box;
@@ -288,9 +301,51 @@ h1 {
   text-decoration: none;
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
-  transition: all 0.4s; }
+  transition: all 0.4s;
+  text-transform: uppercase; }
   .button:hover {
-    background: #666666; }
+    background: #666666;
+    padding: 20px 45px; }
+
+.courses ul {
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300; }
+
+.courses li {
+  margin: 0 15px; }
+
+.courses a {
+  color: #222222;
+  text-decoration: none;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s; }
+
+.courses a:hover {
+  color: #86bc42; }
+
+.courses-cards {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.card {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: calc((100% - 90px) / 4);
+  border: 1px solid #e1e1e1; }
+  .card img {
+    width: 100%; }
+  .card:nth-child(4n) {
+    margin-right: 0; }
+
+.social {
+  border-top: 1px solid #e1e1e1; }
 
 body {
   font-family: 'Raleway', sans-serif;
