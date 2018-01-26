@@ -1,16 +1,120 @@
+//PRIMARY NAV
 .nav-primary {
     background: $darkblack;
+    margin: 0;
+    font-weight: 300;
+    font-size: 12px;
+    padding: 20px 0;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    a {
+        color: #fff;
+        text-decoration: none;
+        transform: 0.3s;
+    }
+    a:hover {
+        color: $green;
+    }
+    ul {
+        padding: 0;
+    }
+    .svg-inline--fa path {
+        fill: $green;
+    }
+    .svg-inline--fa {
+        margin-right: 15px;
+    }
 }
 
+.nav-primary-contact {
+    padding: 0;
+    flex-basis: 400px;
+    flex-grow: 1;
+    li {
+        padding-right: 40px;
+    }
+}
+
+div.nav-primary-logo {
+    width: 150px;
+}
+
+.nav-primary-login {
+    flex-basis: 400px;
+    flex-grow: 1;
+    text-align: right;
+    li {
+        padding-left: 40px;
+    }
+}
+
+//SECONDARY NAV
+.nav-secondary {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px black;
+    height: 70px;
+    ul {
+        height: 70px;
+        margin: 0 auto;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 700;
+        font-size: 14px;
+    }
+    a {
+        text-decoration: none;
+        color: $darkblack;
+        text-transform: uppercase;
+        transition: 0.3s;
+    }
+    a:hover {
+        color: $green;
+    }
+}
+
+// HERO SECTION
 .hero {
     background: url(../images/hero.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     background-color: $green;
+    height: calc(100vh - 150px);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        width: 80%;
+        margin: 50px auto;
+    }
 }
 
-button {
+h1 {
+    margin: 0;
+    font-size: 72px;
+    line-height: 90px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.button {
     background: $green;
     border: 0;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 20px 35px;
+    margin: 50px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.4s;
+    &:hover {
+        background: $darkgray;
+    }
 }
