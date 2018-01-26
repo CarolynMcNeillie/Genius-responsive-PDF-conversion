@@ -1,3 +1,4 @@
+@charset "UTF-8";
 article,
 aside,
 details,
@@ -333,6 +334,11 @@ h1 {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
+  .courses-cards h4 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 20px; }
 
 .card {
   margin-right: 30px;
@@ -343,9 +349,52 @@ h1 {
     width: 100%; }
   .card:nth-child(4n) {
     margin-right: 0; }
+  .card:hover {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 1, 0.35);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 1, 0.35); }
 
 .social {
-  border-top: 1px solid #e1e1e1; }
+  border-top: 1px solid #e1e1e1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 20px; }
+  .social p {
+    font-weight: 500;
+    font-size: 14;
+    color: #666666; }
+    .social p:last-of-type {
+      color: #86bc42; }
+  .social .svg-inline--fa {
+    margin-right: 5px; }
+    .social .svg-inline--fa:last-of-type {
+      margin-left: 15px; }
+
+.prof {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 80px;
+  position: relative; }
+  .prof a {
+    color: #86bc42; }
+  .prof a:hover {
+    color: #b7b7b7; }
+  .prof::before {
+    content: "●";
+    color: #b7b7b7;
+    font-size: 100px;
+    position: absolute;
+    left: -70px;
+    top: 5px; }
+
+.profile {
+  font-weight: 300;
+  font-size: 12px;
+  text-transform: uppercase; }
 
 body {
   font-family: 'Raleway', sans-serif;
