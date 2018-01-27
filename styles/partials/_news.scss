@@ -1,0 +1,50 @@
+.news-wrapper {
+    margin-top: 100px;
+}
+
+.news-item {
+    width: 100%;
+    background: $lightgray;
+    padding-top: 70px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 593px;
+    margin-bottom: 85px;
+    min-height: 450px;
+    position: relative;
+    transition: all 0.3s;
+    h4 {
+        font-weight: 700;
+        font-size: 24px;
+        margin: 0;
+    }
+    .attribution {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 30px;
+        margin-bottom: 0;
+    }
+    p {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 70px;
+    }
+    img {
+        float: left;
+        margin: 0 30px 0 30px;
+        position: absolute;
+        top: -35px;
+        left: -0px;
+    }
+    .button {
+        font-size: 14px;
+        padding: 16px 30px;
+        margin: 0;
+    }
+}
+
+.news-item.active,
+.news-item:hover {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 1, 0.35);
+}

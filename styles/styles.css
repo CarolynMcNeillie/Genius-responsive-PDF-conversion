@@ -165,7 +165,7 @@ input::-moz-focus-inner {
   box-sizing: border-box; }
 
 .nav-primary {
-  background: #212121;
+  background: #111111;
   margin: 0;
   font-weight: 300;
   font-size: 12px;
@@ -253,7 +253,7 @@ div.nav-primary-logo {
     font-size: 14px; }
   .nav-secondary a {
     text-decoration: none;
-    color: #212121;
+    color: #111111;
     text-transform: uppercase;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
@@ -421,6 +421,79 @@ h1 {
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 1, 0.35);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 1, 0.35); }
 
+.news-wrapper {
+  margin-top: 100px; }
+
+.news-item {
+  width: 100%;
+  background: #f0f2f7;
+  padding-top: 70px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 593px;
+  margin-bottom: 85px;
+  min-height: 450px;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+  .news-item h4 {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0; }
+  .news-item .attribution {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 30px;
+    margin-bottom: 0; }
+  .news-item p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 70px; }
+  .news-item img {
+    float: left;
+    margin: 0 30px 0 30px;
+    position: absolute;
+    top: -35px;
+    left: -0px; }
+  .news-item .button {
+    font-size: 14px;
+    padding: 16px 30px;
+    margin: 0; }
+
+.news-item.active,
+.news-item:hover {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 1, 0.35);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 1, 0.35); }
+
+footer {
+  background: #222222;
+  color: white; }
+  footer a {
+    color: #fff;
+    text-decoration: none; }
+    footer a:hover {
+      color: #86bc42; }
+
+.final-footer {
+  background: #111111;
+  width: 100%;
+  min-height: 65px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
 body {
   font-family: 'Raleway', sans-serif;
   margin: 0;
@@ -474,3 +547,6 @@ div.heading-image {
 .gallery .heading-image,
 .features .heading-image {
   background: #f0f2f7; }
+
+ul {
+  padding: 0; }

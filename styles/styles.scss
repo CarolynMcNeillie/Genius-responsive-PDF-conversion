@@ -8,7 +8,8 @@
 @import "partials/header";
 @import "partials/courses";
 @import "partials/gallery";
-@import "partials/_news";
+@import "partials/news";
+@import "partials/features";
 @import "partials/footer";
 body {
     font-family: 'Raleway', sans-serif;
@@ -75,4 +76,8 @@ div.heading-image {
     .heading-image {
         background: $lightgray;
     }
+}
+
+ul {
+    padding: 0;
 }

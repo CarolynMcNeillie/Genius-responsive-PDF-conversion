@@ -1,0 +1,22 @@
+footer {
+    background: $black;
+    color: white;
+    a {
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+            color: $green;
+        }
+    }
+}
+
+.final-footer {
+    background: $darkblack;
+    width: 100%;
+    min-height: 65px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-direction: row;
+}
