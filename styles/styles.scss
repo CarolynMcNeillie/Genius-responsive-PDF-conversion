@@ -7,6 +7,8 @@
 @import "partials/variables";
 @import "partials/header";
 @import "partials/courses";
+@import "partials/gallery";
+@import "partials/_news";
 @import "partials/footer";
 body {
     font-family: 'Raleway', sans-serif;
@@ -18,6 +20,7 @@ body {
     max-width: 1210px;
     margin: 0 auto;
     padding: 0 20px;
+    position: relative;
 }
 
 li {
@@ -26,6 +29,8 @@ li {
 
 section {
     padding: 100px;
+    position: relative;
+    // z-index: -10;
     &:nth-child(even) {
         background-color: $lightgray;
     }
@@ -44,4 +49,30 @@ h2 {
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
+    margin: 24px;
+}
+
+div.heading-image {
+    margin: 0 auto;
+    width: 70px;
+    background: #fff;
+    text-align: center;
+    &::before {
+        content: "";
+        height: 2px;
+        width: 130px;
+        background: $green;
+        display: block;
+        position: relative;
+        left: -30px;
+        top: 15px;
+        z-index: -10;
+    }
+}
+
+.gallery,
+.features {
+    .heading-image {
+        background: $lightgray;
+    }
 }
