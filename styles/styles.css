@@ -558,6 +558,13 @@ h1 {
   left: -90px;
   top: -30px; }
 
+.features-feature:hover::before {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out; }
+
 .pricing-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
