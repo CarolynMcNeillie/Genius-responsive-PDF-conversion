@@ -30,6 +30,8 @@
         .price {
             background: $green;
             box-shadow: 0px 0px 10px 0px rgba(0, 0, 1, 0.25);
+            transform: rotateY(360deg);
+            transition: transform 1s ease-out;
         }
     }
     .price {
