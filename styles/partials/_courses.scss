@@ -4,6 +4,7 @@
         font-size: 14px;
         line-height: 24px;
         font-weight: 300;
+        margin: 55px 0;
     }
     li {
         margin: 0 15px;
@@ -54,9 +55,11 @@
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
+    min-height: 60px;
+    align-items: center;
     p {
         font-weight: 500;
-        font-size: 14;
+        font-size: 14px;
         color: $darkgray;
         &:last-of-type {
             color: $green;

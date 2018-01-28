@@ -10,6 +10,7 @@
 @import "partials/gallery";
 @import "partials/news";
 @import "partials/features";
+@import "partials/pricing";
 @import "partials/footer";
 body {
     font-family: 'Raleway', sans-serif;
@@ -28,17 +29,24 @@ li {
     display: inline-block;
 }
 
+div.courses {
+    background: white;
+}
+
 section {
     padding: 100px;
-    position: relative;
-    // z-index: -10;
     &:nth-child(even) {
         background-color: $lightgray;
+        position: static;
     }
 }
 
+.lightgray {
+    background-color: $lightgray;
+}
+
 h3 {
-    font-size: 18;
+    font-size: 18px;
     line-height: 24px;
     font-weight: 400;
     text-transform: uppercase;
@@ -47,6 +55,7 @@ h3 {
 
 h2 {
     font-size: 36px;
+    line-height: 24px;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
@@ -58,16 +67,16 @@ div.heading-image {
     width: 70px;
     background: #fff;
     text-align: center;
-    &::before {
+    &::after {
         content: "";
         height: 2px;
         width: 130px;
         background: $green;
         display: block;
         position: relative;
+        z-index: -1;
         left: -30px;
-        top: 15px;
-        z-index: -10;
+        top: -20px;
     }
 }
 
@@ -76,6 +85,10 @@ div.heading-image {
     .heading-image {
         background: $lightgray;
     }
+}
+
+.lightgray {
+    background: $lightgray;
 }
 
 ul {

@@ -180,9 +180,9 @@ input::-moz-focus-inner {
   .nav-primary a {
     color: #fff;
     text-decoration: none;
-    -webkit-transform: 0.3s;
-    -ms-transform: 0.3s;
-    transform: 0.3s; }
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
   .nav-primary a:hover {
     color: #86bc42; }
   .nav-primary ul {
@@ -195,11 +195,13 @@ input::-moz-focus-inner {
 .nav-primary-logo img {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
-  transition: 0.5s; }
+  transition: 0.5s;
+  height: 38px;
+  width: 139px; }
   .nav-primary-logo img:hover {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1); }
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05); }
 
 .nav-primary-contact {
   padding: 0;
@@ -312,7 +314,8 @@ h1 {
   text-align: center;
   font-size: 14px;
   line-height: 24px;
-  font-weight: 300; }
+  font-weight: 300;
+  margin: 55px 0; }
 
 .courses li {
   margin: 0 15px; }
@@ -363,10 +366,14 @@ h1 {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 0 20px; }
+  padding: 0 20px;
+  min-height: 60px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
   .social p {
     font-weight: 500;
-    font-size: 14;
+    font-size: 14px;
     color: #666666; }
     .social p:last-of-type {
       color: #86bc42; }
@@ -460,7 +467,9 @@ h1 {
   .news-item .button {
     font-size: 14px;
     padding: 16px 30px;
-    margin: 0; }
+    margin: 0;
+    position: absolute;
+    bottom: 35px; }
 
 .news-item.active,
 .news-item:hover {
@@ -475,13 +484,13 @@ h1 {
   left: -50px; }
 
 .features h4 {
-  size: 24px;
-  display: relative; }
+  font-size: 24px;
+  position: relative; }
 
 .features p {
   font-size: 14px;
   line-height: 24px;
-  weight: 300; }
+  font-weight: 300; }
 
 .features-wrapper {
   display: -webkit-box;
@@ -497,6 +506,18 @@ h1 {
   z-index: 10;
   width: calc((100% - 201px) / 3); }
 
+.features-feature::before {
+  content: "";
+  background: rgba(255, 255, 255, 0.5);
+  height: 205px;
+  width: 205px;
+  display: block;
+  border-radius: 100%;
+  position: absolute;
+  z-index: -1;
+  left: -90px;
+  top: -30px; }
+
 footer {
   background: #222222;
   color: white; }
@@ -505,6 +526,9 @@ footer {
     text-decoration: none; }
     footer a:hover {
       color: #86bc42; }
+  footer img {
+    height: 38px;
+    width: 139px; }
 
 .final-footer {
   background: #111111;
@@ -538,14 +562,20 @@ body {
 li {
   display: inline-block; }
 
+div.courses {
+  background: white; }
+
 section {
-  padding: 100px;
-  position: relative; }
+  padding: 100px; }
   section:nth-child(even) {
-    background-color: #f0f2f7; }
+    background-color: #f0f2f7;
+    position: static; }
+
+.lightgray {
+  background-color: #f0f2f7; }
 
 h3 {
-  font-size: 18;
+  font-size: 18px;
   line-height: 24px;
   font-weight: 400;
   text-transform: uppercase;
@@ -553,6 +583,7 @@ h3 {
 
 h2 {
   font-size: 36px;
+  line-height: 24px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
@@ -563,19 +594,22 @@ div.heading-image {
   width: 70px;
   background: #fff;
   text-align: center; }
-  div.heading-image::before {
+  div.heading-image::after {
     content: "";
     height: 2px;
     width: 130px;
     background: #86bc42;
     display: block;
     position: relative;
+    z-index: -1;
     left: -30px;
-    top: 15px;
-    z-index: -10; }
+    top: -20px; }
 
 .gallery .heading-image,
 .features .heading-image {
+  background: #f0f2f7; }
+
+.lightgray {
   background: #f0f2f7; }
 
 ul {

@@ -12,7 +12,7 @@
     a {
         color: #fff;
         text-decoration: none;
-        transform: 0.3s;
+        transition: 0.3s;
     }
     a:hover {
         color: $green;
@@ -30,8 +30,10 @@
 
 .nav-primary-logo img {
     transition: 0.5s;
+    height: 38px;
+    width: 139px;
     &:hover {
-        transform: scale(1.1);
+        transform: scale(1.05);
     }
 }
 

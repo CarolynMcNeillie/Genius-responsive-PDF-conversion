@@ -7,13 +7,13 @@
         left: -50px;
     }
     h4 {
-        size: 24px;
-        display: relative;
+        font-size: 24px;
+        position: relative;
     }
     p {
         font-size: 14px;
         line-height: 24px;
-        weight: 300;
+        font-weight: 300;
     }
 }
 
@@ -29,13 +29,15 @@
     width: calc((100% - 201px) / 3);
 }
 
-// .features-feature::before {
-//     content: "";
-//     background: #fff;
-//     height: 205px;
-//     width: 205px;
-//     display: block;
-//     border-radius: 100%;
-//     position: absolute;
-//     z-index: 1;
-// }
+.features-feature::before {
+    content: "";
+    background: rgba(255, 255, 255, 0.5);
+    height: 205px;
+    width: 205px;
+    display: block;
+    border-radius: 100%;
+    position: absolute;
+    z-index: -1;
+    left: -90px;
+    top: -30px;
+}
