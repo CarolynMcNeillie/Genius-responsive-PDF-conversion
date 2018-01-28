@@ -1,16 +1,126 @@
 footer {
     background: $black;
-    color: white;
+    color: #f8f8f8;
+    font-size: 14px;
+    line-height: 24px;
+    .wrapper {
+        display: flex;
+        padding: 70px 0;
+    }
     a {
-        color: #fff;
+        color: #f8f8f8;
         text-decoration: none;
         &:hover {
             color: $green;
         }
     }
+    a.active {
+        color: $green;
+    }
     img {
         height: 38px;
         width: 139px;
+    }
+    .svg-inline--fa {
+        color: $green;
+    }
+    h3 {
+        font-weight: 700;
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: 28px;
+    }
+    form {
+        width: 350px;
+        display: flex;
+        align-items: center;
+        &+p {
+            font-size: 12px;
+        }
+    }
+    input {
+        margin: 30px 0;
+        background: #fff;
+        border: 0;
+        border-radius: 5px;
+        color: #999999;
+        font-size: 12px;
+        font-weight: 300;
+        padding: 15px 30px;
+        min-width: 230px;
+        height: 42px;
+    }
+    button {
+        height: 42px;
+        width: 60px;
+        background: $green;
+        border: 0;
+        color: #fff;
+        margin-left: 5px;
+        .svg-inline--fa {
+            color: #fff;
+            font-size: 18px;
+        }
+    }
+}
+
+.footer {
+    margin-right: 120px;
+    &:last-of-type {
+        margin: 0;
+    }
+}
+
+.footer-about,
+.footer-newsletters {
+    width: calc((100% - 360px) / 6 * 2);
+}
+
+.footer-courses,
+.footer-contact {
+    width: calc((100% - 360px) / 6);
+}
+
+.footer-courses,
+.footer-about,
+.footer-contact {
+    li {
+        display: block;
+        line-height: 36px;
+    }
+    .svg-inline--fa {
+        margin-right: 10px;
+    }
+}
+
+.footer-contact {
+    p {
+        padding-left: 25px;
+        position: relative;
+        .svg-inline--fa {
+            position: absolute;
+            left: 0;
+            top: 5px;
+        }
+    }
+}
+
+.footer-social {
+    font-size: 24px;
+    svg {
+        margin-right: 20px;
+    }
+    .fa-facebook-square {
+        color: #3b5999;
+    }
+    .fa-twitter-square {
+        color: #47A9E9;
+    }
+    .fa-google-plus-square {
+        color: #CF3D35;
+    }
+    .fa-instagram {
+        color: #7E5045;
     }
 }
 
@@ -19,8 +129,24 @@ footer {
     width: 100%;
     min-height: 65px;
     color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-direction: row;
+    border-top: 1px solid white;
+    .wrapper {
+        padding: 30px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 100;
+    }
+    ul {
+        margin: 0;
+    }
+    li {
+        text-transform: uppercase;
+        font-size: 10px;
+        margin-right: 10px;
+    }
+    p {
+        margin: 0;
+    }
 }

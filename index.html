@@ -2,11 +2,9 @@
 <html lang="en">
 
 <!-- CAROLYN
-- replace the logo with a better file
 - add the (+) to the .active gallery image
 - the vertical line between register & login was working before - where did it go?
 - get afters to appear on gray sections
-- set up ::after circles in the features section & figure out my z-index situation
 -->
 
 <head>
@@ -22,7 +20,7 @@
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,700,900" rel="stylesheet">
 </head>
 
 <body>
@@ -232,7 +230,7 @@
                 <div class="heading-image"><img src="images/open-magazine.png" alt="hello" /></div>
 
                 <div class="news-wrapper">
-                    <div class="news-item clearfix active">
+                    <div class="news-item clearfix">
                         <img src="images/news1.jpg" alt="Open your books to page 135">
                         <h4>Course in Digital Photography and Photoshop</h4>
                         <p class="attribution">
@@ -314,13 +312,14 @@
 
         <section class="pricing" id="pricing">
             <div class="wrapper">
-                <h3>Choose your pricing</h3>
+                <h3>Look, this is just what it costs</h3>
                 <h2>Take it or leave it</h2>
 
                 <div class="heading-image"><img src="images/open-magazine.png" alt="hello" /></div>
 
                 <div class="pricing-wrapper">
                     <div class="pricing-card">
+
                         <p><span class="price"><sup>$</sup>0</span></p>
 
                         <h4>Trial</h4>
@@ -356,24 +355,24 @@
                         <p>Choose Plan</p>
                     </div>
 
-                </div>
 
-                <div class="pricing-card">
-                    <p><span class="price"><sup>$</sup>99</span></p>
+                    <div class="pricing-card">
+                        <p><span class="price"><sup>$</sup>99</span></p>
 
-                    <h4>Trial</h4>
-                    <p>Per month when paid annually</p>
+                        <h4>Trial</h4>
+                        <p>Per month when paid annually</p>
 
-                    <ul>
-                        <li>Life Time Access</li>
-                        <li>Unlimited All Courses</li>
-                        <li>3000+ Lessons</li>
-                        <li>Free Supporter</li>
-                        <li>Free Ebook Downloads</li>
-                        <li>Premium Tutorials</li>
-                        <li>Unlimited Registered User</li>
-                    </ul>
-                    <p>Choose Plan</p>
+                        <ul>
+                            <li>Life Time Access</li>
+                            <li>Unlimited All Courses</li>
+                            <li>3000+ Lessons</li>
+                            <li>Free Supporter</li>
+                            <li>Free Ebook Downloads</li>
+                            <li>Premium Tutorials</li>
+                            <li>Unlimited Registered User</li>
+                        </ul>
+                        <p>Choose Plan</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -383,22 +382,22 @@
     <footer>
         <div class="wrapper">
 
-            <div class="footer-about">
+            <div class="footer footer-about">
                 <img src="images/logo.png" alt="Genius" />
 
-                <p><a href="index.html">Genius</a> provides a broad range of learning programs and activites that's unique in itself</p>
+                <p><a href="index.html" class="active">Genius</a> provides a broad range of learning programs and activites that's unique in itself</p>
 
                 <ul>
-                    <li>Mountain Trekking Programs</li>
-                    <li>Inter School Competitions</li>
-                    <li>Awards and Ceremony</li>
+                    <li><i class="fas fa-check"></i> Mountain Trekking Programs</li>
+                    <li><i class="fas fa-check"></i> Inter School Competitions</li>
+                    <li><i class="fas fa-check"></i> Awards and Ceremony</li>
                 </ul>
             </div>
 
-            <div class="footer-courses">
+            <div class="footer footer-courses">
                 <h3>Courses</h3>
                 <ul>
-                    <li class="active">Courses</li>
+                    <li class="active"> <i class="fas fa-angle-right"></i> Courses</li>
                     <li>Events</li>
                     <li>Gallery</li>
                     <li>FAQs</li>
@@ -407,7 +406,7 @@
                 </ul>
             </div>
 
-            <div class="footer-contact">
+            <div class="footer footer-contact">
                 <h3>Contact Us</h3>
                 <p class="address">
                     <span class="footer-icon"><i class="fas fa-map-marker-alt"></i></span> Hawkins DDR 873<br/> Drake APA 159<br/> Yosemite AD 19</p>
@@ -417,7 +416,7 @@
                     <span class="footer-icon"><i class="fas fa-envelope"></i></span> contact@com.vn</p>
             </div>
 
-            <div class="footer-newsletters">
+            <div class="footer footer-newsletters">
                 <h3>Newsletters</h3>
                 <p>Sign up for new Envato content updates, surveys & offers.</p>
 

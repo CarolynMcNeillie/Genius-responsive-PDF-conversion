@@ -1,0 +1,16 @@
+@media (max-width: 1209px) {
+    body {
+        border: 1px solid red;
+    }
+    .wrapper {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .card {
+        width: calc((100% - 30px) / 2);
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+    }
+}
