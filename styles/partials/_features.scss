@@ -1,0 +1,41 @@
+.features {
+    .svg-inline--fa {
+        color: $green;
+        font-size: 30px;
+        vertical-align: text-top;
+        position: absolute;
+        left: -50px;
+    }
+    h4 {
+        size: 24px;
+        display: relative;
+    }
+    p {
+        font-size: 14px;
+        line-height: 24px;
+        weight: 300;
+    }
+}
+
+.features-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+}
+
+.features-feature {
+    position: relative;
+    z-index: 10;
+    width: calc((100% - 201px) / 3);
+}
+
+// .features-feature::before {
+//     content: "";
+//     background: #fff;
+//     height: 205px;
+//     width: 205px;
+//     display: block;
+//     border-radius: 100%;
+//     position: absolute;
+//     z-index: 1;
+// }
