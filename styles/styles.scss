@@ -66,16 +66,26 @@ div.heading-image {
     width: 70px;
     background: #fff;
     text-align: center;
+    position: relative;
+    &::before {
+        content: "";
+        height: 2px;
+        width: 35px;
+        background: $green;
+        display: block;
+        position: absolute;
+        top: 14px;
+        left: -35px;
+    }
     &::after {
         content: "";
         height: 2px;
-        width: 130px;
+        width: 35px;
         background: $green;
         display: block;
-        position: relative;
-        z-index: -1;
-        left: -30px;
-        top: -20px;
+        position: absolute;
+        top: 14px;
+        left: 70px;
     }
 }
 
@@ -92,6 +102,14 @@ div.heading-image {
 
 ul {
     padding: 0;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    display: none;
 }
 
 @import "partials/breakpoints";

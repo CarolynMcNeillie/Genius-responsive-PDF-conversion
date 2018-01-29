@@ -61,8 +61,9 @@ div.nav-primary-logo {
     text-align: right;
     li {
         padding-left: 40px;
-        .decorated::before {
+        &.decorated::before {
             content: "|";
+            position: relative;
             left: -20px;
             color: #fff;
         }

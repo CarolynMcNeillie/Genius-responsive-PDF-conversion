@@ -1,3 +1,4 @@
+//Here I'm making adjustments to the features section which is layed out a bit delicately
 @media (max-width: 1380px) {
     body {
         border: 1px solid green;
@@ -34,6 +35,7 @@
     }
 }
 
+// Now we're hitting the width of the wrapper so I'm re-aligning things a little to get nice consistent margins. Also reflowing the cards and the footer.
 @media (max-width: 1230px) {
     body {
         border: 1px solid red;
@@ -95,41 +97,82 @@
 //drop-down for pricing section with radio buttons
 //fix footer
 @media (max-width: 1080px) {
-    .features-wrapper {
-        padding-left: 120px;
-        padding-right: 60px;
-    }
-    .features-feature {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        min-height: 150px;
-        &:nth-of-type(2) {
-            flex-direction: row-reverse;
-        }
-        h4 {
-            min-width: 250px;
-        }
-        p {
-            width: 500px;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 20px;
-        }
-        &::before {
-            top: 0px;
-            left: 10px;
-            height: 150px;
-            width: 150px;
-        }
-        &:nth-of-type(2)::before {
-            right: 0;
-        }
+    body {
+        border: 1px solid yellow;
     }
     .pricing-wrapper {
         display: block;
+        margin-top: 50px;
+        position: relative;
+    }
+    .price {
+        height: 130px;
+        width: 130px;
+        left: 0;
+        top: -25px;
+        opacity: 0;
     }
     .pricing-card {
         width: 100%;
+        text-align: center;
+        min-height: 125px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        p {
+            line-height: 1;
+            margin: 0;
+            padding-bottom: 20px;
+        }
+        h4 {
+            padding: 0;
+            margin: 0;
+            padding-top: 15px;
+            font-size: 35px;
+            letter-spacing: 1px;
+            line-height: 1;
+        }
+        p:last-child {
+            font-size: 30px;
+            letter-spacing: 1px;
+        }
+        ul {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            li {
+                display: list-item;
+                list-style-type: square;
+                margin: 0 10px;
+                padding: 0 10px;
+            }
+        }
+        ul,
+        p {
+            position: absolute;
+            visibility: hidden;
+            opacity: 1;
+            transition: all 1s;
+        }
+    }
+    input[type="radio"] {
+        display: block;
+        position: absolute;
+        top: 35px;
+        right: 35px;
+        &:checked~p:nth-of-type(2),
+        &:checked~p:nth-of-type(3),
+        &:checked~ul {
+            position: static;
+            visibility: visible;
+            opacity: 1;
+        }
+        &:checked~span {
+            opacity: 1;
+        }
     }
 }
