@@ -23,7 +23,8 @@
         display: block;
         line-height: 48px;
     }
-    &:hover {
+    &:hover,
+    &:focus {
         border: 10px solid $green;
         background: $green;
         color: white;

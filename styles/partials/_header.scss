@@ -19,7 +19,8 @@
         text-decoration: none;
         transition: 0.3s;
     }
-    a:hover {
+    a:hover,
+    a:focus {
         color: $green;
     }
     ul {
@@ -37,7 +38,8 @@
     transition: 0.5s;
     height: 38px;
     width: 139px;
-    &:hover {
+    &:hover,
+    &:focus {
         transform: scale(1.05);
     }
 }
@@ -93,7 +95,8 @@ div.nav-primary-logo {
         text-transform: uppercase;
         transition: 0.3s;
     }
-    a:hover {
+    a:hover,
+    &:focus {
         color: $green;
     }
 }
@@ -136,7 +139,8 @@ h1 {
     text-decoration: none;
     transition: all 0.4s;
     text-transform: uppercase;
-    &:hover {
+    &:hover,
+    &:focus {
         background: $darkgray;
         padding: 20px 45px;
     }
