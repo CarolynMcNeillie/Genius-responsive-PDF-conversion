@@ -6,17 +6,15 @@
         position: absolute;
         left: -50px;
     }
-}
-
-h4 {
-    font-size: 24px;
-    position: relative;
-}
-
-p {
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 300;
+    h4 {
+        font-size: 24px;
+        position: relative;
+    }
+    p {
+        font-size: 14px;
+        line-height: 1.7;
+        font-weight: 300;
+    }
 }
 
 .features-wrapper {
@@ -28,7 +26,8 @@ p {
 .features-feature {
     position: relative;
     z-index: 10;
-    width: calc((100% - 201px) / 3);
+    margin-left: 85px;
+    width: calc((100% - 426px) / 3);
 }
 
 .features-feature::before {

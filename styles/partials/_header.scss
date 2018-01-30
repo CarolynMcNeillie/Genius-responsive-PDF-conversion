@@ -116,31 +116,35 @@ div.nav-primary-logo {
     p {
         font-weight: 400;
         font-size: 18px;
-        line-height: 30px;
+        line-height: 1.6em;
         width: 80%;
-        margin: 50px auto;
+        margin: 50px auto 0;
     }
 }
 
 h1 {
     margin: 0;
     font-size: 72px;
-    line-height: 90px;
+    line-height: 1.25em;
     font-weight: 900;
     text-transform: uppercase;
 }
 
-.button {
+div.button {
     background: $green;
     border: 0;
     font-weight: 700;
     font-size: 18px;
     padding: 20px 35px;
     margin: 50px;
-    color: #fff;
     text-decoration: none;
     transition: all 0.4s;
     text-transform: uppercase;
+    display: inline-block;
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
     &:hover,
     &:focus {
         background: $darkgray;
