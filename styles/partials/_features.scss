@@ -44,7 +44,8 @@ p {
     top: -30px;
 }
 
+//Took out these cool hovers because these aren't clicable & so it would be confusing!
 .features-feature:hover::before {
-    transform: rotateY(180deg);
+    // transform: rotateY(180deg);
     transition: all 1s ease-out;
 }

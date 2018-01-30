@@ -192,7 +192,8 @@ input::-moz-focus-inner {
     text-decoration: none;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
-    transition: 0.3s; }
+    transition: 0.3s;
+    padding: 15px 5px; }
   .nav-primary a:hover,
   .nav-primary a:focus {
     color: #86bc42; }
@@ -270,7 +271,8 @@ div.nav-primary-logo {
     text-transform: uppercase;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
-    transition: 0.3s; }
+    transition: 0.3s;
+    padding: 15px; }
   .nav-secondary a:hover, .nav-secondary:focus {
     color: #86bc42; }
 
@@ -338,7 +340,8 @@ h1 {
   text-decoration: none;
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
-  transition: all 0.4s; }
+  transition: all 0.4s;
+  padding: 15px; }
 
 .courses a:hover,
 .courses a:focus {
@@ -364,6 +367,8 @@ h1 {
   border: 1px solid #e1e1e1;
   position: relative;
   padding-bottom: 75px; }
+  .card a {
+    padding-left: 0; }
   .card img {
     width: 100%; }
   .card:nth-child(4n) {
@@ -430,7 +435,10 @@ h1 {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-top: 60px; }
+  margin-top: 60px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 
 .grid-object {
   margin-right: 30px;
@@ -584,8 +592,6 @@ p {
   top: -30px; }
 
 .features-feature:hover::before {
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
   -webkit-transition: all 1s ease-out;
   -o-transition: all 1s ease-out;
   transition: all 1s ease-out; }
@@ -678,7 +684,8 @@ footer {
     padding: 70px 0; }
   footer a {
     color: #f8f8f8;
-    text-decoration: none; }
+    text-decoration: none;
+    padding: 15px 0; }
     footer a:hover, footer a:focus {
       color: #86bc42; }
   footer a.active {
