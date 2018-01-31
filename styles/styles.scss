@@ -107,10 +107,17 @@ ul {
     padding: 0;
 }
 
-// input {
-//     display: none;
-// }
-// label {
-//     display: none;
-// }
+input#menu,
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    display: none;
+}
+
+footer span {
+    display: none;
+}
+
 @import "partials/breakpoints";

@@ -314,6 +314,8 @@ div.button {
   padding: 20px 35px;
   margin: 50px;
   text-decoration: none;
+  text-align: center;
+  line-height: 1.3em;
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   transition: all 0.4s;
@@ -321,7 +323,8 @@ div.button {
   display: inline-block; }
   div.button a {
     color: #fff;
-    text-decoration: none; }
+    text-decoration: none;
+    text-align: center; }
   div.button:hover, div.button:focus {
     background: #666666;
     padding: 20px 45px; }
@@ -899,6 +902,16 @@ div.heading-image {
 ul {
   padding: 0; }
 
+input#menu,
+input[type="radio"] {
+  display: none; }
+
+label {
+  display: none; }
+
+footer span {
+  display: none; }
+
 @media (max-width: 1380px) {
   .features-wrapper {
     display: block; }
@@ -1053,7 +1066,7 @@ ul {
       padding-top: 15px;
       font-size: 35px;
       letter-spacing: 1px;
-      line-height: 1; }
+      line-height: 100px; }
     .pricing-card p:last-child {
       font-size: 30px;
       letter-spacing: 1px; }
@@ -1083,15 +1096,32 @@ ul {
     display: block;
     position: absolute;
     top: 35px;
-    right: 35px; }
+    right: 35px;
+    background: url(../images/open.png) no-repeat left center;
+    background-size: 25px 25px;
+    width: 30px;
+    height: 30px; }
     input[type="radio"]:checked ~ p:nth-of-type(2),
     input[type="radio"]:checked ~ p:nth-of-type(3),
     input[type="radio"]:checked ~ ul {
       position: static;
       visibility: visible;
       opacity: 1; }
+    input[type="radio"]:checked ~ label {
+      visibility: hidden; }
     input[type="radio"]:checked ~ span {
       opacity: 1; }
+  input[type="radio"] ~ label {
+    display: block;
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    background: url(../images/open.png) no-repeat left center;
+    background-size: 25px 25px;
+    width: 30px;
+    height: 30px; }
+  input[type="radio"] {
+    visibility: hidden; }
   footer .wrapper {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
@@ -1113,7 +1143,12 @@ ul {
     margin-bottom: 75px; }
     .footer-courses li {
       display: inline-block;
-      margin-right: 10px; } }
+      margin-right: 10px; }
+  footer span {
+    text-transform: uppercase;
+    font-size: 8px;
+    line-height: 1em;
+    display: inline-block; } }
 
 @media (max-width: 800px) {
   section {
@@ -1128,7 +1163,10 @@ ul {
     -ms-flex-preferred-size: 0;
     flex-basis: 0; }
   .nav-primary-logo {
-    margin: 20px; }
+    margin-top: 20px;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    order: -1; }
   .nav-primary {
     padding: 20px; }
     .nav-primary a {
@@ -1148,23 +1186,33 @@ ul {
     .nav-primary-contact li {
       padding-right: 0;
       padding-left: 10px; }
+      .nav-primary-contact li:first-child {
+        padding-left: 0; }
   .nav-primary-login {
     text-align: center; }
     .nav-primary-login a {
       margin: 0 0 30px; }
+    .nav-primary-login li:first-child {
+      padding-left: 0; }
   .hero h1 {
     margin-top: 100px; }
-  #menu,
+  #menu {
+    display: none;
+    cursor: pointer; }
+    #menu:checked ~ ul {
+      display: block; }
+    #menu:checked + label {
+      background: url(../images/x.png) no-repeat left center;
+      background-size: 16px 16px; }
   #menu + label {
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
     margin-left: 30px;
-    display: inline-block;
-    cursor: pointer; }
-    #menu:checked ~ ul,
-    #menu + label:checked ~ ul {
-      display: block; }
+    padding-left: 30px;
+    background: url(../images/burger.png) no-repeat left center;
+    background-size: 12px 12px;
+    display: inline-block; }
   .nav-secondary {
     position: absolute;
     display: -webkit-box;
@@ -1242,6 +1290,8 @@ ul {
   .hero p {
     font-size: 16px;
     margin-top: 30px; }
-  .hero .button {
+  .hero div.button {
     margin: 30px;
-    font-size: 16px; } }
+    font-size: 16px; }
+    .hero div.button:hover, .hero div.button:focus {
+      padding: 20px 35px; } }

@@ -138,12 +138,15 @@ div.button {
     padding: 20px 35px;
     margin: 50px;
     text-decoration: none;
+    text-align: center;
+    line-height: 1.3em;
     transition: all 0.4s;
     text-transform: uppercase;
     display: inline-block;
     a {
         color: #fff;
         text-decoration: none;
+        text-align: center;
     }
     &:hover,
     &:focus {

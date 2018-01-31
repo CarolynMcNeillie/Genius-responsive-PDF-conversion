@@ -170,7 +170,7 @@
             padding-top: 15px;
             font-size: 35px;
             letter-spacing: 1px;
-            line-height: 1;
+            line-height: 100px;
         }
         p:last-child {
             font-size: 30px;
@@ -196,11 +196,17 @@
             opacity: 1;
         }
     }
+    //ACCORDIAN
     input[type="radio"] {
         display: block;
         position: absolute;
         top: 35px;
         right: 35px;
+        background: url(../images/open.png) no-repeat left center;
+        //by Thomas Helbig from the Noun Project
+        background-size: 25px 25px;
+        width: 30px;
+        height: 30px;
         &:checked~p:nth-of-type(2),
         &:checked~p:nth-of-type(3),
         &:checked~ul {
@@ -208,9 +214,25 @@
             visibility: visible;
             opacity: 1;
         }
+        &:checked~label {
+            visibility: hidden;
+        }
         &:checked~span {
             opacity: 1;
         }
+    }
+    input[type="radio"]~label {
+        display: block;
+        position: absolute;
+        top: 35px;
+        right: 35px;
+        background: url(../images/open.png) no-repeat left center;
+        background-size: 25px 25px;
+        width: 30px;
+        height: 30px;
+    }
+    input[type="radio"] {
+        visibility: hidden;
     }
     footer .wrapper {
         justify-content: flex-start;
@@ -236,6 +258,12 @@
             margin-right: 10px;
         }
     }
+    footer span {
+        text-transform: uppercase;
+        font-size: 8px;
+        line-height: 1em;
+        display: inline-block;
+    }
 }
 
 //Reflow! Reflow!
@@ -255,7 +283,8 @@
         flex-basis: 0;
     }
     .nav-primary-logo {
-        margin: 20px;
+        margin-top: 20px;
+        order: -1;
     }
     .nav-primary {
         padding: 20px;
@@ -278,6 +307,9 @@
         li {
             padding-right: 0;
             padding-left: 10px;
+            &:first-child {
+                padding-left: 0;
+            }
         }
     }
     .nav-primary-login {
@@ -285,18 +317,16 @@
         a {
             margin: 0 0 30px;
         }
+        li:first-child {
+            padding-left: 0;
+        }
     }
     //**HAMBURGER**//
     .hero h1 {
         margin-top: 100px;
     }
-    #menu,
-    #menu+label {
-        font-size: 16px;
-        font-weight: 700;
-        text-transform: uppercase;
-        margin-left: 30px;
-        display: inline-block;
+    #menu {
+        display: none;
         cursor: pointer;
         // &:hover {
         //     color: $green;
@@ -304,6 +334,21 @@
         &:checked~ul {
             display: block;
         }
+        &:checked+label {
+            background: url(../images/x.png) no-repeat left center;
+            background-size: 16px 16px;
+        }
+    }
+    #menu+label {
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-left: 30px;
+        padding-left: 30px;
+        background: url(../images/burger.png) no-repeat left center;
+        //Hamburger by Alex Podolsky from the Noun Project 
+        background-size: 12px 12px;
+        display: inline-block;
     }
     .nav-secondary {
         position: absolute;
@@ -410,9 +455,13 @@
             font-size: 16px;
             margin-top: 30px;
         }
-        .button {
+        div.button {
             margin: 30px;
             font-size: 16px;
+            &:hover,
+            &:focus {
+                padding: 20px 35px;
+            }
         }
     }
 }
