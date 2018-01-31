@@ -40,10 +40,9 @@ section {
     }
 }
 
-.hamburger {
-    display: none;
-}
-
+// .hamburger {
+//     display: none;
+// }
 .lightgray {
     background-color: $lightgray;
 }
@@ -58,7 +57,7 @@ h3 {
 
 h2 {
     font-size: 36px;
-    line-height: 24px;
+    line-height: 36px;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
@@ -108,12 +107,10 @@ ul {
     padding: 0;
 }
 
-input[type="radio"] {
-    display: none;
-}
-
-label {
-    display: none;
-}
-
+// input {
+//     display: none;
+// }
+// label {
+//     display: none;
+// }
 @import "partials/breakpoints";

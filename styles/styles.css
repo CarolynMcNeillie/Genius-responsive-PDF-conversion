@@ -846,9 +846,6 @@ section {
     background-color: #f0f2f7;
     position: static; }
 
-.hamburger {
-  display: none; }
-
 .lightgray {
   background-color: #f0f2f7; }
 
@@ -861,7 +858,7 @@ h3 {
 
 h2 {
   font-size: 36px;
-  line-height: 24px;
+  line-height: 36px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
@@ -901,12 +898,6 @@ div.heading-image {
 
 ul {
   padding: 0; }
-
-input[type="radio"] {
-  display: none; }
-
-label {
-  display: none; }
 
 @media (max-width: 1380px) {
   .features-wrapper {
@@ -992,7 +983,7 @@ label {
     -ms-flex-direction: column;
     flex-direction: column;
     padding: 30px;
-    padding-left: calc(50% + 60px);
+    padding-left: calc(50% + 30px);
     -ms-flex-pack: distribute;
     justify-content: space-around; }
     .news-item .news-image {
@@ -1163,13 +1154,16 @@ label {
       margin: 0 0 30px; }
   .hero h1 {
     margin-top: 100px; }
-  .hamburger {
-    font-size: 20px;
+  #menu,
+  #menu + label {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
     margin-left: 30px;
-    display: block; }
-    .hamburger:hover {
-      color: #86bc42; }
-    .hamburger:hover + ul {
+    display: inline-block;
+    cursor: pointer; }
+    #menu:checked ~ ul,
+    #menu + label:checked ~ ul {
       display: block; }
   .nav-secondary {
     position: absolute;
@@ -1210,16 +1204,17 @@ label {
     border-top: 5px solid #f0f2f7; }
   .news-item {
     padding: 30px;
-    padding-top: calc(50% + 30px); }
+    padding-top: 330px; }
     .news-item .news-image {
       right: 0;
-      bottom: 50%;
+      bottom: calc(100% - 300px);
       width: 100%; }
   .courses li {
     margin: 0; }
   .features-feature p {
     margin-bottom: 50px;
-    font-size: 16px; }
+    font-size: 16px;
+    padding-right: 0; }
   .features-feature::before {
     display: none; }
   .features-feature:nth-child(2n) {
@@ -1228,3 +1223,25 @@ label {
       left: -50px; }
     .features-feature:nth-child(2n) p {
       padding: 0; } }
+
+@media (max-width: 650px) {
+  .courses-cards {
+    display: block; }
+  .card {
+    margin-right: 0;
+    width: 100%; } }
+
+@media (max-width: 500px) {
+  section {
+    padding: 30px 15px; }
+  .hero h1 {
+    font-size: 30px;
+    margin-top: 30px; }
+  .hero .wrapper {
+    margin-top: 80px; }
+  .hero p {
+    font-size: 16px;
+    margin-top: 30px; }
+  .hero .button {
+    margin: 30px;
+    font-size: 16px; } }

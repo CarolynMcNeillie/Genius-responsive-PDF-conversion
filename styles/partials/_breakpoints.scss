@@ -104,7 +104,7 @@
         display: flex;
         flex-direction: column;
         padding: 30px;
-        padding-left: calc(50% + 60px);
+        padding-left: calc(50% + 30px);
         justify-content: space-around;
         .news-image {
             position: absolute;
@@ -290,14 +290,18 @@
     .hero h1 {
         margin-top: 100px;
     }
-    .hamburger {
-        font-size: 20px;
+    #menu,
+    #menu+label {
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
         margin-left: 30px;
-        display: block;
-        &:hover {
-            color: $green;
-        }
-        &:hover+ul {
+        display: inline-block;
+        cursor: pointer;
+        // &:hover {
+        //     color: $green;
+        // }
+        &:checked~ul {
             display: block;
         }
     }
@@ -347,10 +351,10 @@
     }
     .news-item {
         padding: 30px;
-        padding-top: calc(50% + 30px);
+        padding-top: 330px;
         .news-image {
             right: 0;
-            bottom: 50%;
+            bottom: calc(100% - 300px);
             width: 100%;
         }
     }
@@ -361,6 +365,7 @@
         p {
             margin-bottom: 50px;
             font-size: 16px;
+            padding-right: 0;
         }
         &::before {
             display: none;
@@ -373,6 +378,41 @@
             p {
                 padding: 0;
             }
+        }
+    }
+}
+
+//Reflow courses {
+@media (max-width: 650px) {
+    .courses-cards {
+        display: block;
+    }
+    .card {
+        margin-right: 0;
+        width: 100%;
+    }
+}
+
+//REALLY targeting cellphones now!
+@media (max-width: 500px) {
+    section {
+        padding: 30px 15px;
+    }
+    .hero {
+        h1 {
+            font-size: 30px;
+            margin-top: 30px;
+        }
+        .wrapper {
+            margin-top: 80px;
+        }
+        p {
+            font-size: 16px;
+            margin-top: 30px;
+        }
+        .button {
+            margin: 30px;
+            font-size: 16px;
         }
     }
 }
