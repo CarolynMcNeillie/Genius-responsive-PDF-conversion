@@ -438,10 +438,7 @@ div.button {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-top: 60px;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
+  margin-top: 60px; }
 
 .grid-object {
   margin-right: 30px;
